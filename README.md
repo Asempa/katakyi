@@ -1,3 +1,0 @@
-katakyi.com
-
-Coming Soon!
