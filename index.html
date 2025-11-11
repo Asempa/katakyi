@@ -15,7 +15,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      background: linear-gradient(180deg,#0f172a 0%, #071129 100%);
+      background: #071129;
       font-family: 'Martian Mono', monospace;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
@@ -25,7 +25,7 @@
     /* Big centered text */
     h1{
       font-weight:500; /* Medium */
-      font-size: clamp(96px, 22vw, 320px); /* very huge but responsive */
+      font-size: clamp(60px, 22vw, 320px); /* very huge but responsive */
       line-height: 0.9;
       letter-spacing: -0.02em;
       text-transform:uppercase;
@@ -37,27 +37,11 @@
       -webkit-text-stroke: 1px rgba(255,255,255,0.02);
     }
 
-    /* Subtle animated underline glow */
-    .glow-wrap{
-      position:relative;
-      display:inline-block;
-      padding-bottom: .05em;
-    }
-    .glow-wrap::after{
-      content:"";
-      position:absolute;
-      left:0;right:0;bottom:-0.15em;height:0.25em;
-      background:linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.14), rgba(255,255,255,0.06));
-      filter: blur(10px);
-      opacity:0.9;
-      transform: scaleX(1);
-      transition:transform .6s cubic-bezier(.2,.9,.2,1);
-    }
-    h1:hover .glow-wrap::after{ transform: scaleX(1.05) }
+    /* underline glow removed */
 
     /* Make sure it fits cleanly on very narrow screens */
     @media (max-width:420px){
-      h1{font-size: clamp(64px, 18vw, 120px);}
+      h1{font-size: clamp(40px, 18vw, 120px);}
     }
   </style>
 </head>
